@@ -1,0 +1,11 @@
+{
+  "name": "@miyucy/globals",
+  "version": "1.0.0",
+  "description": "miyucy",
+  "main": "index.js",
+  "author": "miyucy",
+  "license": "ISC",
+  "bin": {
+    "globals": "globals.js"
+  }
+}
