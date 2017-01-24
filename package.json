@@ -6,6 +6,6 @@
   "author": "miyucy",
   "license": "ISC",
   "bin": {
-    "globals": "globals.js"
+    "globals": "globals.sh"
   }
 }
