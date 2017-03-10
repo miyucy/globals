@@ -1,9 +1,14 @@
 var spawn = require('child_process').spawn;
 const packages = [
-  'eslint', '@hail2u/gfmtoc',
-  'js-yaml', 'jscs', 'marked',
-  'node-gyp', 'scsslint',
-  'tern', 'yarn',
+  'npm',
+  'node-gyp',
+  'eslint',
+  '@hail2u/gfmtoc',
+  'js-yaml',
+  'jscs',
+  'marked',
+  'scsslint',
+  'tern',
 ];
 const npm = spawn('npm', ['install', '--global', ...packages]);
 const log = (label, data) => {
