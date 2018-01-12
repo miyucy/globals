@@ -1,6 +1,7 @@
 const { spawn } = require("child_process");
 const packages = [
   "@hail2u/gfmtoc",
+  "aws-sam-local",
   "create-react-app",
   "create-react-native-app",
   "diff-so-fancy",
@@ -9,6 +10,7 @@ const packages = [
   "eslint-plugin-flowtype",
   "eslint-plugin-prettier",
   "eslint-plugin-react",
+  "firebase-tools",
   "flow-typed",
   "js-yaml",
   "jscs",
@@ -17,7 +19,9 @@ const packages = [
   "npm",
   "prettier",
   "scsslint",
+  "serverless",
   "tern",
+  "tern-jsx",
   "typescript"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
