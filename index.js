@@ -16,6 +16,7 @@ const packages = [
   "eslint-plugin-prettier",
   "eslint-plugin-promise",
   "eslint-plugin-react",
+  "eslint-plugin-sort-imports-es6-autofix",
   "eslint-plugin-standard",
   "firebase-tools",
   "flow-typed",
