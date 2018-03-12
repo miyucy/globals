@@ -29,6 +29,7 @@ const packages = [
   "serverless",
   "tern",
   "tern-jsx",
+  "truffle",
   "typescript"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
