@@ -20,6 +20,7 @@ const packages = [
   "eslint-plugin-standard",
   "firebase-tools",
   "flow-typed",
+  "js-yaml",
   "jscs",
   "marked",
   "node-gyp",
