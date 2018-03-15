@@ -31,6 +31,9 @@ const packages = [
   "tern",
   "tern-jsx",
   "truffle",
+  "tslint",
+  "tslint-config-prettier",
+  "tslint-plugin-prettier",
   "typescript"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
