@@ -34,7 +34,8 @@ const packages = [
   "tslint",
   "tslint-config-prettier",
   "tslint-plugin-prettier",
-  "typescript"
+  "typescript",
+  "javascript-typescript-langserver"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
 const log = (label, data) => {
