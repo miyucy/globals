@@ -20,6 +20,7 @@ const packages = [
   "eslint-plugin-standard",
   "firebase-tools",
   "flow-typed",
+  "javascript-typescript-langserver",
   "js-yaml",
   "jscs",
   "marked",
@@ -35,7 +36,7 @@ const packages = [
   "tslint-config-prettier",
   "tslint-plugin-prettier",
   "typescript",
-  "javascript-typescript-langserver"
+  "vsce"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
 const log = (label, data) => {
