@@ -36,6 +36,7 @@ const packages = [
   "tslint-config-prettier",
   "tslint-plugin-prettier",
   "typescript",
+  "typescript-language-server",
   "vsce"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
