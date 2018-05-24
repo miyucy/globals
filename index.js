@@ -37,7 +37,8 @@ const packages = [
   "tslint-plugin-prettier",
   "typescript",
   "typescript-language-server",
-  "vsce"
+  "vsce",
+  "yarn-tools"
 ];
 const npm = spawn("npm", ["install", "--global", ...packages]);
 const log = (label, data) => {
