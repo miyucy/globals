@@ -18,6 +18,7 @@ const packages = [
   "eslint-plugin-react",
   "eslint-plugin-sort-imports-es6-autofix",
   "eslint-plugin-standard",
+  "eslint-plugin-unicorn",
   "firebase-tools",
   "flow-typed",
   "javascript-typescript-langserver",
