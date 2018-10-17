@@ -38,6 +38,7 @@ const packages = [
   "tslint-plugin-prettier",
   "typescript",
   "typescript-language-server",
+  "typescript-styled-plugin",
   "vsce",
   "yarn-tools"
 ];
