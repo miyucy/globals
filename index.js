@@ -26,7 +26,6 @@ const packages = [
   "jscs",
   "marked",
   "node-gyp",
-  "npm",
   "prettier",
   "scsslint",
   "serverless",
@@ -43,17 +42,17 @@ const packages = [
   "typescript-language-server",
   "typescript-styled-plugin",
   "vsce",
-  "yarn-tools"
+  "yarn-deduplicate"
 ];
-const npm = spawn("npm", ["install", "--global", ...packages]);
+const cmd = spawn("yarn", ["global", "add", ...packages]);
 const log = (label, data) => {
   `${data}`.split(/\r?\n/).forEach(line => {
     console.log(`${label}: ${line}`);
   });
 };
-npm.stdout.on("data", log.bind(null, "stdout"));
-npm.stderr.on("data", log.bind(null, "stderr"));
-npm.on("exit", (code, signal) => {
+cmd.stdout.on("data", log.bind(null, "stdout"));
+cmd.stderr.on("data", log.bind(null, "stderr"));
+cmd.on("exit", (code, signal) => {
   if (code !== 0) {
     console.log(`code=${code} signal=${signal}`);
   }
