@@ -1,6 +1,5 @@
 const { spawn } = require("child_process");
 const packages = [
-  "@hail2u/gfmtoc",
   "aws-sam-local",
   "babel-eslint",
   "create-react-app",
@@ -20,7 +19,6 @@ const packages = [
   "eslint-plugin-standard",
   "eslint-plugin-unicorn",
   "firebase-tools",
-  "flow-typed",
   "javascript-typescript-langserver",
   "js-yaml",
   "jscs",
