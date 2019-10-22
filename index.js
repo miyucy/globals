@@ -1,6 +1,6 @@
 const { spawn } = require("child_process");
 const packages = [
-  "aws-sam-local",
+  "aws-cdk",
   "babel-eslint",
   "create-react-app",
   "create-react-native-app",
@@ -40,7 +40,9 @@ const packages = [
   "typescript-language-server",
   "typescript-styled-plugin",
   "vsce",
-  "yarn-deduplicate"
+  "yarn-deduplicate",
+  "redoc-cli",
+  "speedscope"
 ];
 const cmd = spawn("yarn", ["global", "add", ...packages]);
 const log = (label, data) => {
