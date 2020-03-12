@@ -1,5 +1,7 @@
 const { spawn } = require("child_process");
 const packages = [
+  "@typescript-eslint/eslint-plugin",
+  "@typescript-eslint/parser",
   "aws-cdk",
   "babel-eslint",
   "create-react-app",
@@ -19,30 +21,25 @@ const packages = [
   "eslint-plugin-standard",
   "eslint-plugin-unicorn",
   "firebase-tools",
+  "hygen",
   "javascript-typescript-langserver",
   "js-yaml",
-  "jscs",
   "marked",
   "node-gyp",
   "prettier",
+  "redoc-cli",
   "scsslint",
   "serverless",
+  "speedscope",
   "tern",
   "tern-jsx",
   "truffle",
-  "tslint",
-  "tslint-config-prettier",
-  "tslint-config-standard",
-  "tslint-eslint-rules",
-  "tslint-plugin-prettier",
   "tsutils",
   "typescript",
   "typescript-language-server",
   "typescript-styled-plugin",
   "vsce",
-  "yarn-deduplicate",
-  "redoc-cli",
-  "speedscope"
+  "yarn-deduplicate"
 ];
 const cmd = spawn("yarn", ["global", "add", ...packages]);
 const log = (label, data) => {
